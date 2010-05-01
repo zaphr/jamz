@@ -1,6 +1,8 @@
 Jam::Application.routes.draw do |map|
   resources :songs
 
+  root :to => "songs#index", :as => 'homepage'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
