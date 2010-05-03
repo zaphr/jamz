@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  tab_id: 1
+  chord_id: 1
+  column_no: 1
+  row_no: 1
+
+two:
+  tab_id: 1
+  chord_id: 1
+  column_no: 1
+  row_no: 1
