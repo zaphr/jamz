@@ -48,7 +48,7 @@
 	border-right: 1px solid#fff;
 }
 
-#navigation li a:hover { background:#383; }
+#navigation li a:hover { background:#383;}
 
 #content
 {
@@ -74,10 +74,7 @@
 
 #song-list table
 {
-
-	border-bottom: 1px dotted #595; 
 	margin-bottom: 10px;
-
 }
 
 #song-list td
