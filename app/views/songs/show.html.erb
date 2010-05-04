@@ -23,9 +23,9 @@
 
 <p>
   <b>Tab:</b>
-<% @tab_layout.each do |layout_item| %>
-  <%= layout_item.chord.name %>
-<% end  %>
+
+<%= render(:partial => 'tab_line', :collection => @tab_lines) %>
+
 </p>
 
 

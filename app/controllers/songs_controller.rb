@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+  include SongsHelper
   # GET /songs
   # GET /songs.xml
   def index
@@ -14,11 +15,7 @@ class SongsController < ApplicationController
   # GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
-    @tab_layout = TabPosition.where(:tab_id => @song.tab).order('row_no ASC').order('column_no ASC').all
-    puts "xxxxxxxxxxxxxxxx"
-    puts @tab_layout.class
-    puts @tab_layout.length
-    puts  @tab_layout.first.class
+    @tab_lines = collect_chords(@song)
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @song }

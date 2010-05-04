@@ -14,7 +14,7 @@ TabPosition.delete_all
 chords = %w{Am C Dm F E}
 
 chords.each do |chord|
-  Chord.create(:name => chord, :image => "#{chord}.jpg")  
+  Chord.create(:name => chord, :image => "#{chord}.gif")  
 end  
 
 tab = Tab.new(:capo_position => '2')
@@ -24,6 +24,9 @@ TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'Am').first, :col
 TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'C').first, :column_no => 2, :row_no => 1) 
 TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'Dm').first, :column_no => 3, :row_no => 1) 
 TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'F').first, :column_no => 4, :row_no => 1) 
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'Am').first, :column_no => 1, :row_no => 2)  
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'C').first, :column_no => 2, :row_no => 2) 
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'E').first, :column_no => 3, :row_no => 2) 
 
 
 Song.create(:name => 'House of the Rising Sun', :artist => 'Tommy Emmanuel', :youtube_id => "WIWSVTaytOw", :tab => tab)
