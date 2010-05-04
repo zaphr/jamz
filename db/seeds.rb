@@ -20,10 +20,10 @@ end
 tab = Tab.new(:capo_position => '2')
 tab.save
 
-TabPosition.create(:tab_id => tab, :chord_id => Chord.where(:name => 'Am'), :column_no => 1, :row_no => 1)  
-TabPosition.create(:tab_id => tab, :chord_id => Chord.where(:name => 'C'), :column_no => 2, :row_no => 1) 
-TabPosition.create(:tab_id => tab, :chord_id => Chord.where(:name => 'Dm'), :column_no => 3, :row_no => 1) 
-TabPosition.create(:tab_id => tab, :chord_id => Chord.where(:name => 'F'), :column_no => 4, :row_no => 1) 
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'Am').first, :column_no => 1, :row_no => 1)  
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'C').first, :column_no => 2, :row_no => 1) 
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'Dm').first, :column_no => 3, :row_no => 1) 
+TabPosition.create(:tab => tab, :chord => Chord.where(:name => 'F').first, :column_no => 4, :row_no => 1) 
 
 
 Song.create(:name => 'House of the Rising Sun', :artist => 'Tommy Emmanuel', :youtube_id => "WIWSVTaytOw", :tab => tab)

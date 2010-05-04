@@ -21,6 +21,15 @@
   <%= @song.tab.capo_position %>
 </p>
 
+<p>
+  <b>Tab:</b>
+<% @tab_layout.each do |layout_item| %>
+  <%= layout_item.chord.name %>
+<% end  %>
+</p>
+
+
+
 
 <%= link_to 'Edit', edit_song_path(@song) %> |
 <%= link_to 'Back', songs_path %>
