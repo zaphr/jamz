@@ -1,14 +1,13 @@
 <p class="notice"><%= notice %></p>
 
-<p>
-  <h2><%= @song.name %></h2>
-</p>
+<h2> <%= @song.name %> </h2>
+
 
 <p>
 
-<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/WIWSVTaytOw&hl=en_US&fs=1&"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<object id="youtube_video" width="480" height="385"><param name="movie" value="http://www.youtube.com/v/WIWSVTaytOw&hl=en_US&fs=1&"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
 
-  
+
 </p>
 
 <p>
@@ -18,18 +17,19 @@
 
 <p>
   <b>Capo position:</b>
-  <%= @song.tab.capo_position %>
+  <%= @song.tab.capo_position %>                                        
+
 </p>
 
-<p>
-  <b>Tab:</b>
+    <a href="#" id="fade-out-tab">Hide Guitar Chords</a>
+    <a href="#" id="fade-in-tab">View Guitar Chords</a>
+
+
+
 
 <%= render(:partial => 'tab_line', :collection => @tab_lines) %>
 
-</p>
 
 
 
 
-<%= link_to 'Edit', edit_song_path(@song) %> |
-<%= link_to 'Back', songs_path %>

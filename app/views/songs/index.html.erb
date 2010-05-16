@@ -1,35 +1,46 @@
 
+ <!--<h2>Top songs</h2>-->
+ <div id="song-search">
+ <!--<input type="text" value="Search for a song" >-->
 
+ <!--<button>Search</button>-->
+
+
+   <form action="#" method="post">
+   <input id="SearchText" name="text" />
+   <button>Search</button>
+ </form>
+
+
+
+ </div>  
 <div id="song-list">
 <!--<h1>All Songs</h1>-->
 <table>
-  <tr>
-    <th>Name</th>
-    <th></th>
+  <!--<tr>-->
+    <!--<th>Name</th>-->
+    <!--<th></th>-->
 
-    <th>Artist</th>
-    <th>Capo position</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+    <!--<th>Artist</th>-->
+    <!--<th>Capo position</th>-->
+    <!--<th></th>-->
+    <!--<th></th>-->
+    <!--<th></th>-->
+  <!--</tr>-->
 
 <% @songs.each do |song| %>
-
+  
   <tr class="<%= cycle('list-line-odd', 'list-line-even') %>">
 
-    <td><%= song.name %></td>
-    <!-- <td><%= song.youtube_id %></td> -->
 
-    <td><object width="200" height="150"><param name="movie" value="<%= youtube_url(song.youtube_id) %>"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="<%= youtube_url(song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="200" height="150"></embed></object></td>
 
+
+    <td><object width="200" height="150"><param name="movie" value="<%= youtube_url(song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="200" height="150"></object></td>
+     <td><%= song.name %></td>
 
     <td><%= song.artist %></td>
-    <td><%= song.capo_position %></td>
+    <td><%= song.tab.capo_position %></td>
     <td><%= link_to 'Show', song %></td>
-<!--
-    <td><%= link_to 'Edit', edit_song_path(song) %></td>
-    <td><%= link_to 'Destroy', song, :confirm => 'Are you sure?', :method => :delete %></td>-->
 
   </tr>
 
@@ -38,4 +49,4 @@
 </div>
 <br />
 
-<%= link_to 'New Song', new_song_path %>
+

@@ -1,8 +1,18 @@
+body {/* background-color: rgb(84, 93, 110); color: #333;*/
+/*	background-image:url('/images/fade_23.png');
+	background-repeat:repeat-x;*/
+	background-color: #272727;
+    margin: 0;
+    padding:0;
+
+	 }
+
 #container
 {
 	margin: 0 auto;
 	width: 1024px;
 	background:#fff;
+	border: 1px solid black;
 }
 
 #title
@@ -10,11 +20,36 @@
 	text-align: center;
 }
 
+#song-search button{
+  font-size:88%;   
+
+}
+
+#SearchText
+{
+/*border: 1px solid black;*/
+background: #555555;
+background: #ccc;    
+/*color: #ffffff;*/
+font-size: 1.1em;
+    height: 25px;
+}
+
 #header
 {
+    	/*margin: 0;*/
+    /*padding:0;*/
+    /*top:0;*/
+    /*left:0;*/
+
 /*	background:#ccc;*/
 	background: #660000;
-	padding: 20px;
+ /*background: #39414A url(http://static.jquery.com/files/rocker/images/bg-home-tile.jpg) repeat-x 50% 0px;*/
+   	/*background-image:url('/images/br1.png');*/
+	/*background-repeat:repeat-x;*/
+	padding: 5px;
+    border-bottom: 10px solid grey;
+    height: 30px;
 }
 
 #header h1 { margin: 0; }
@@ -24,6 +59,7 @@
 	float: left;
 	width: 1024px;
 	background:#333;
+    
 }
 
 #navigation ul
@@ -37,6 +73,12 @@
 	list-style-type: none;
 	display: inline;
 }
+
+/*#view-tab-selector li*/
+/*{*/
+	/*list-style-type: none;*/
+	/*display: inline;    */
+/*}*/
 
 #navigation li a
 {
@@ -54,6 +96,7 @@
 {
 	clear: left;
 	padding: 20px;
+	height: 1200px;
 
 }
 
@@ -75,6 +118,7 @@
 #song-list table
 {
 	margin-bottom: 10px;
+    width: 986px;
 }
 
 #song-list td
@@ -92,4 +136,35 @@
 
 #song-list .list-line-odd {
   background:   #dddddd;
+}
+
+ul.thumb {
+	float: left;
+	list-style: none;
+	margin: 0; padding: 10px;
+	width: 1000px;
+
+}
+ul.thumb li {
+	margin: 0; padding: 5px;
+	float: left;
+	position: relative;  /* Set the absolute positioning base coordinate */
+	width: 110px;
+	height: 110px;
+	
+}
+ul.thumb li img {
+	width: 100px; height: 100px; /* Set the small thumbnail size */
+		width: 100px; height: 100px; /* Set the small thumbnail size */
+	-ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
+	border: 5px solid #ddd;
+	padding: 5px;
+	background: #f0f0f0;
+	position: absolute;
+	left: 0; top: 0;
+}
+ul.thumb li img.hover {
+	/*background:url(thumb_bg.png) no-repeat center center;  *//* Image used as background on hover effect*/
+	border: none; /* Get rid of border on hover */
+		background:#fff;
 }
