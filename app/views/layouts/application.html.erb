@@ -2,16 +2,28 @@
 <html>
 <head>
   <title>Jam</title>
-  <%= stylesheet_link_tag 'jam', :media => 'all' %>
-
+  <!--<%= stylesheet_link_tag 'jam', :media => 'all' %>-->
+   <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/overcast/jquery-ui.css", "application" %>
 
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" %>
-<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<!--<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>-->
 
     <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tag %>
 
+  <style>
+.ui-tabs .ui-tabs-hide {
+     display: none;
+}
+#tabs {
+	/*position:absolute;*/
+	/*width:800px;*/
+	/*top: 200px;*/
+	/*left:200px;*/
+}
+
+</style>
 
 
 </head>
@@ -21,28 +33,40 @@
 			<!--<h2 id="title">-->
 			  <!--Jam through the light and into the night-->
 			<!--</h2>-->
+
 		</div>
 
 	<div id="container">
 
-		<div id="navigation">
+
+                		<div id="tabs">
 			<ul>
-				<li><%= link_to 'All Songs', homepage_path %></li>				
-				<li><a href="#">Tuner</a></li>
-				<li><a href="#">Chords</a></li>
-				<li><a href="#">Contact us</a></li>
+			<li><a href="#">All Songs</a></li>
+				<li><a href="#foo">Tuner</a></li>
+				<li><a href="#truck">Chords</a></li>
+				<li><a href="#tabs-4">Contact us</a></li>
 			</ul>
 		</div>
+
+
+
+		<!--<div id="navigation">-->
+			<!--<ul>-->
+				<!--<li><%= link_to 'All Songs', homepage_path %></li>-->
+				<!--<li><a href="#">Tuner</a></li>-->
+				<!--<li><a href="#">Chords</a></li>-->
+				<!--<li><a href="#">Contact us</a></li>-->
+			<!--</ul>-->
+		<!--</div>-->
 		<div id="content">
 
         <%= yield %>
 
 		</div>
 		<div id="footer">
-		
+
 		</div>
 	</div>
-
 
 
 </body>

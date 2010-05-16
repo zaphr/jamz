@@ -7,6 +7,8 @@ body {/* background-color: rgb(84, 93, 110); color: #333;*/
 
 	 }
 
+
+
 #container
 {
 	margin: 0 auto;
@@ -49,7 +51,8 @@ font-size: 1.1em;
 	/*background-repeat:repeat-x;*/
 	padding: 5px;
     border-bottom: 10px solid grey;
-    height: 30px;
+    height: 50px;
+    display:none;
 }
 
 #header h1 { margin: 0; }
@@ -59,7 +62,7 @@ font-size: 1.1em;
 	float: left;
 	width: 1024px;
 	background:#333;
-    
+
 }
 
 #navigation ul
@@ -74,11 +77,11 @@ font-size: 1.1em;
 	display: inline;
 }
 
-/*#view-tab-selector li*/
-/*{*/
-	/*list-style-type: none;*/
-	/*display: inline;    */
-/*}*/
+#view-tab-selector li
+{
+	list-style-type: none;
+	display: inline;
+}
 
 #navigation li a
 {

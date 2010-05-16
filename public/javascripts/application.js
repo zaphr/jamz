@@ -43,7 +43,7 @@ $("ul.thumb li").hover(function() {
 
     $(function(){
 	  $("button").click(function(){
-		alert("Watcha looking for Willis??");
+//		alert("Watcha looking for Willis??");
 		return false;
 	});
 });
@@ -78,8 +78,14 @@ $(function(){
     populateElement('#SearchText', 'Find a song');
 });
 
+//$(function(){
+//    $("#tabs").tabs();
+//});
 
 
+$(function(){
+    $("#tabs").tabs();
+});
 
 
 
