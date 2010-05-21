@@ -1,0 +1,20 @@
+~/Dropbox/git $ git init --bare
+~/Dropbox/git $ cd ~/project
+~/project $ git remote add origin ~/Dropbox/git/project.git
+~/project $ git push origin master
+
+git clone git://github.com/rails/rails.git
+
+git pull --rebase   ##Update from the remote
+git reset –hard     ##Yikes! Rolling back
+git push
+
+git branch experimental
+git branch  ## view branches
+git checkout experimental
+## edit on branch
+git commit -a
+git checkout master ## switch back
+git merge experimental
+git branch -d experimental  ## delete branch 
+
