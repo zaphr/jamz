@@ -3,7 +3,8 @@
 <head>
   <title>Jam</title>
   <!--<%= stylesheet_link_tag 'jam', :media => 'all' %>-->
-   <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/overcast/jquery-ui.css", "application" %>
+   <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css", "application" %>
+  <%= stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Reenie+Beanie"%>
 
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
   <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" %>
@@ -29,35 +30,22 @@
 </head>
 <body>
 
-    		<div id="header">
-			<!--<h2 id="title">-->
-			  <!--Jam through the light and into the night-->
-			<!--</h2>-->
-
-		</div>
 
 	<div id="container">
 
+<!-- <h2>Music soothes many a stained soul</h2> -->
 
-                		<div id="tabs">
+<h1>Bring me your tired, your weary. I will jam with them until they sparkle</h1>
+
+
+		<div id="navigation">
 			<ul>
-			<li><a href="#">All Songs</a></li>
-				<li><a href="#foo">Tuner</a></li>
-				<li><a href="#truck">Chords</a></li>
-				<li><a href="#tabs-4">Contact us</a></li>
+				<li><%= link_to 'All Songs', homepage_path %></li>
+				<li><a href="#">Tuner</a></li>
+				<li><a href="#">Chords</a></li>
+				<li><a href="#">Contact us</a></li>
 			</ul>
-		</div>
-
-
-
-		<!--<div id="navigation">-->
-			<!--<ul>-->
-				<!--<li><%= link_to 'All Songs', homepage_path %></li>-->
-				<!--<li><a href="#">Tuner</a></li>-->
-				<!--<li><a href="#">Chords</a></li>-->
-				<!--<li><a href="#">Contact us</a></li>-->
-			<!--</ul>-->
-		<!--</div>-->
+	</div>
 		<div id="content">
 
         <%= yield %>

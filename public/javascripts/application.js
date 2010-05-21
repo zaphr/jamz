@@ -75,7 +75,7 @@ $(function(){
 
 $(function(){
     $("button").button();
-    populateElement('#SearchText', 'Find a song');
+    populateElement('#SearchText', 'Find a song to jam along to..');
 });
 
 //$(function(){
