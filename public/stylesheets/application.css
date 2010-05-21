@@ -1,9 +1,9 @@
 body {/* background-color: rgb(84, 93, 110); color: #333;*/
-/*	background-image:url('/images/fade_23.png');
-	background-repeat:repeat-x;*/
-	background-color: #272727;
-/*    	background-color:#201F25;*/
-	background-color: white
+	background-image:url('/images/fade_bw1.jpeg');
+/*	background-image:url('/images/ttbk.jpg');	*/
+	
+	background-repeat:repeat-x;
+/*	background-color: grey*/
 ;
     margin: 0;
     padding:0;
@@ -15,7 +15,10 @@ body {/* background-color: rgb(84, 93, 110); color: #333;*/
 }
 
 h1{
-	background: red;
+	text-align: center;
+	  line-height: 100px;
+		font-color: white;
+		color:white;
 }
 
 #container
@@ -23,12 +26,15 @@ h1{
 	margin: 0 auto;
 	width: 1024px;
 	background:#fff;
-/*	border: 1px solid black;*/
+/*		    border-top: 5px solid grey;*/
+	    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 
 #title
 {
 	text-align: center;
+
 }
 
 #song-search button{
@@ -51,20 +57,21 @@ padding:8px;
 
 #header
 {
-    	/*margin: 0;*/
-    /*padding:0;*/
-    /*top:0;*/
-    /*left:0;*/
+
 
 /*	background:#ccc;*/
-	background: #660000;
+	background: #350608;
  /*background: #39414A url(http://static.jquery.com/files/rocker/images/bg-home-tile.jpg) repeat-x 50% 0px;*/
    	/*background-image:url('/images/br1.png');*/
 	/*background-repeat:repeat-x;*/
 	padding: 5px;
-    border-bottom: 5px solid grey;
-    height: 50px;
+	    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  /*  height: 50px;*/
     /*display:none;*/
+	background-image:url('/images/photo_13263_20100303.jpg');
+	background-repeat:repeat-x;
+/*	background-repeat:no-repeat;*/
 }
 
 #header h1 { margin: 0; }
