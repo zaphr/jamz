@@ -1,42 +1,36 @@
-<p class="notice"><%= notice %></p>
-
-<h2> <%= @song.name %>   -   <%= @song.artist %></h2>
 
 
-<p>
+<h2 id='song-title'> <%= @song.name %>   -   <%= @song.artist %></h2>
+
+<div id='capo-desc'><em>Capo position:</em>
+
+<%= generate_capo_postion_text(@song.tab.capo_position) %>
+
+</div>
 
 <object id="youtube_video" width="480" height="385"><param name="movie" value="<%= youtube_url(@song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
 
 
 </p>
 
-<!-- <p>
-  <b>Artist:</b>
-  <%= @song.artist %>
-</p> -->
 
-<div id="chord-listings">
-<p>
-  <b>Capo position:</b>
-
-  <%= generate_capo_postion_text(@song.tab.capo_position) %> 
-</p>
-
-<p>
-  <b>Chords:</b>                                       
+<div id="chord-listings">                                  
 <% @tab_names = @tab_lines %>
 <%= render(:partial => 'tab_name', :collection => @tab_names) %>
-</p>
-
 </div>
 
 <div id="tab-display">
-    <button id="fade-out-tab">Hide Guitar Chords</button>
-    <button id="fade-in-tab">View Guitar Chords</button>
 
-<%= render(:partial => 'tab_line', :collection => @tab_lines) %>
-
+<div id="view-links">
+ 	<a href="#" id="fade-out-tab">Hide Guitar Tablature</a>
+	 <a href="#" id="fade-in-tab">View Guitar Tablature</a>
 </div>
+<%= render(:partial => 'tab_line', :collection => @tab_lines) %>
+</div>
+
+
+
+
 
 
 

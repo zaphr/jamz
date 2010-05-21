@@ -52,6 +52,7 @@ $("ul.thumb li").hover(function() {
 	  $("#fade-out-tab").click(function(){
       $("#fade-out-tab").hide();
 	  $('.thumb').fadeOut();
+
       $("#fade-in-tab").show();
 		return false;
 	});
@@ -62,6 +63,7 @@ $("ul.thumb li").hover(function() {
     $(function(){
 	  $("#fade-in-tab").click(function(){
       $("#fade-in-tab").hide();
+
 	  $('.thumb').fadeIn();
       $("#fade-out-tab").show();          
 		return false;

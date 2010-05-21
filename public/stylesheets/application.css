@@ -1,9 +1,9 @@
 body {/* background-color: rgb(84, 93, 110); color: #333;*/
-	background-image:url('/images/fade_bw1.jpeg');
+/*	background-image:url('/images/fade_bw1.jpeg');*/
 /*	background-image:url('/images/ttbk.jpg');	*/
 	
 	background-repeat:repeat-x;
-/*	background-color: grey*/
+	background-color: grey
 ;
     margin: 0;
     padding:0;
@@ -17,30 +17,52 @@ body {/* background-color: rgb(84, 93, 110); color: #333;*/
 h1{
 	text-align: center;
 	  line-height: 100px;
-		font-color: white;
+	
 		color:white;
 }
 
-h2{
+#song-title{
 	text-align: center;
-	padding:15px;	
+	padding:30px;
+ 	font-size:50px;
+		font-color: white;
+		
+
+}
+
+h3{
+	text-align: center;
+	color:red;	
 }
 
 #youtube_video{
   position:absolute;
+/*left:450px;*/
 	
 }
 
 #chord-listings{
-  position:absolute;
-left :800px;
-        font-size: 28px;
-   /*    font-family: serif;	*/
+  position:relative;
+top:5px;
+left:530px;
+color:red;
+
+  
+ 
 }
 
+
+#capo-desc{
+      font-size: 36px;
+      position:relative;
+top:0px;
+left:560px;
+color:red;
+	
+}
 #tab-display{
 	position:absolute;
-	top:700px;
+	top:780px;
 }
 
 #container
@@ -59,8 +81,13 @@ left :800px;
 
 }
 
+#song-search{
+	display:none;
+}
+
 #song-search button{
-  font-size:88%;   
+  font-size:88%; 
+ 
 
 }
 
@@ -75,6 +102,7 @@ color: grey;
     height: 25px;
 width:600px;
 padding:8px;
+
 }
 
 #header
@@ -186,13 +214,17 @@ padding:8px;
 .tab-names li{
 	list-style-type: none;
 	display: inline;
-/*	border: 3px solid black;*/
-	padding : 20px;		
+	border: 3px solid black;
+	padding : 12px;
+	background-color:black;
+   font-size: 36px;
+	color:white;
 }
 
 .tab-names {
-	border: 2px solid black;
-		padding : 10px;		
+/*	border: 2px solid black;*/
+		padding : 12px;	
+	
 }
 
 ul.thumb {
