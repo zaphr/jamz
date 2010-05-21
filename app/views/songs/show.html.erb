@@ -19,11 +19,15 @@
 <p>
   <b>Capo position:</b>
 
-  <%= generate_capo_postion_text(@song.tab.capo_position) %>                                        
+  <%= generate_capo_postion_text(@song.tab.capo_position) %> 
+</p>
+
+<p>
+  <b>Chords:</b>                                       
 <% @tab_names = @tab_lines %>
 <%= render(:partial => 'tab_name', :collection => @tab_names) %>
-
 </p>
+
 </div>
 
 <div id="tab-display">

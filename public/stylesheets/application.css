@@ -181,12 +181,19 @@ padding:8px;
   background:   #dddddd;
 }
 
+
+
 .tab-names li{
 	list-style-type: none;
 	display: inline;
-		
+/*	border: 3px solid black;*/
+	padding : 20px;		
 }
 
+.tab-names {
+	border: 2px solid black;
+		padding : 10px;		
+}
 
 ul.thumb {
 	float: left;
