@@ -21,6 +21,28 @@ h1{
 		color:white;
 }
 
+h2{
+	text-align: center;
+	padding:15px;	
+}
+
+#youtube_video{
+  position:absolute;
+	
+}
+
+#chord-listings{
+  position:absolute;
+left :800px;
+        font-size: 28px;
+   /*    font-family: serif;	*/
+}
+
+#tab-display{
+	position:absolute;
+	top:700px;
+}
+
 #container
 {
 	margin: 0 auto;
@@ -145,7 +167,6 @@ padding:8px;
 
 #song-list td
 {
-
 	padding: 20px;	
 }
 
@@ -159,6 +180,13 @@ padding:8px;
 #song-list .list-line-odd {
   background:   #dddddd;
 }
+
+.tab-names li{
+	list-style-type: none;
+	display: inline;
+		
+}
+
 
 ul.thumb {
 	float: left;

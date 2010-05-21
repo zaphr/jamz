@@ -42,8 +42,8 @@ $("ul.thumb li").hover(function() {
 
 
     $(function(){
-	  $("button").click(function(){
-//		alert("Watcha looking for Willis??");
+	  $("#song-search button").click(function(){
+		alert("Search coming very soon..");
 		return false;
 	});
 });
@@ -75,7 +75,7 @@ $(function(){
 
 $(function(){
     $("button").button();
-    populateElement('#SearchText', 'Find a song to jam along to..');
+    populateElement('#SearchText', 'Find a song to jam to..');
 });
 
 //$(function(){
@@ -87,7 +87,11 @@ $(function(){
     $("#tabs").tabs();
 });
 
-
+$(function(){
+	$("tbody tr").click(function(e){
+      window.location.href = $(this).find('a').attr('href')
+    });
+});
 
  function populateElement(selector, defvalue) {
     $(selector).each(function() {

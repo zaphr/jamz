@@ -1,36 +1,38 @@
 <p class="notice"><%= notice %></p>
 
-<h2> <%= @song.name %> </h2>
+<h2> <%= @song.name %>   -   <%= @song.artist %></h2>
 
 
 <p>
 
-<object id="youtube_video" width="480" height="385"><param name="movie" value="http://www.youtube.com/v/WIWSVTaytOw&hl=en_US&fs=1&"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
+<object id="youtube_video" width="480" height="385"><param name="movie" value="<%= youtube_url(@song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
 
 
 </p>
 
-<p>
+<!-- <p>
   <b>Artist:</b>
   <%= @song.artist %>
-</p>
+</p> -->
 
+<div id="chord-listings">
 <p>
   <b>Capo position:</b>
-  <%= @song.tab.capo_position %>                                        
+
+  <%= generate_capo_postion_text(@song.tab.capo_position) %>                                        
+<% @tab_names = @tab_lines %>
+<%= render(:partial => 'tab_name', :collection => @tab_names) %>
 
 </p>
+</div>
 
-    <!--<a href="#" id="fade-out-tab">Hide Guitar Chords</a>-->
-    <!--<a href="#" id="fade-in-tab">View Guitar Chords</a>-->
+<div id="tab-display">
     <button id="fade-out-tab">Hide Guitar Chords</button>
     <button id="fade-in-tab">View Guitar Chords</button>
 
-
-
 <%= render(:partial => 'tab_line', :collection => @tab_lines) %>
 
-
+</div>
 
 
 
