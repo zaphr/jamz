@@ -22,8 +22,17 @@
 <div id="tab-display">
 
 <div id="view-links">
- 	<a href="#" id="fade-out-tab">Hide Guitar Tablature</a>
-	 <a href="#" id="fade-in-tab">View Guitar Tablature</a>
+
+ 	<a href="#" id="fade-in-tab">Show Guitar Tablature</a>
+
+<div id="fade-out-tab">
+	 <a href="#" >Hide Guitar Tablature</a>	
+	<div id='capo-desc2'><em>Capo position:</em>
+
+	<%= generate_capo_postion_text(@song.tab.capo_position) %>
+
+	</div>
+	</div>
 </div>
 <%= render(:partial => 'tab_line', :collection => @tab_lines) %>
 </div>

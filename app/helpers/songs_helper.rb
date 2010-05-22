@@ -16,7 +16,7 @@ module SongsHelper
     if position > 0
       "#{position.ordinalize} fret"      
     else
-      "No capo used"
+      "Open"
     end     
   end
   

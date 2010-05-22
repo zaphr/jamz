@@ -1,8 +1,8 @@
 body {/* background-color: rgb(84, 93, 110); color: #333;*/
 /*	background-image:url('/images/fade_bw1.jpeg');*/
-/*	background-image:url('/images/ttbk.jpg');	*/
+	background-image:url('/images/bgd.gif');	
 	
-	background-repeat:repeat-x;
+/*	background-repeat:repeat-x;*/
 	background-color: grey
 ;
     margin: 0;
@@ -60,6 +60,12 @@ left:560px;
 color:red;
 	
 }
+
+#capo-desc2{
+padding:15px;
+color:red;
+	
+}
 #tab-display{
 	position:absolute;
 	top:780px;
@@ -73,6 +79,8 @@ color:red;
 /*		    border-top: 5px solid grey;*/
 	    border-left: 1px solid grey;
     border-right: 1px solid grey;
+	    border-left: 3px solid black;
+    border-right: 3px solid black;
 }
 
 #title
