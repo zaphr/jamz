@@ -1,4 +1,8 @@
 Jam::Application.routes.draw do |map|
+  get "tuner/index"
+  
+  match 'tuner' => 'tuner#index', :as => :tuner
+
   resources :songs
 
   root :to => "songs#index", :as => 'homepage'

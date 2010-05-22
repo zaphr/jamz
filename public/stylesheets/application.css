@@ -41,6 +41,13 @@ h3{
 	
 }
 
+#tuner{
+	position :absolute;
+	left: 390px;
+	top:300px;
+
+}
+
 #chord-listings{
   position:relative;
 top:5px;
@@ -191,7 +198,7 @@ padding:8px;
 {
 	background:#ccc;
 	text-align: right;
-	padding: 20px;
+	padding: 10px;
 	height: 1%;
 }
 
