@@ -51,7 +51,7 @@ $("ul.thumb li").hover(function() {
     $(function(){
 	  $("#fade-out-tab").click(function(){
       $("#fade-out-tab").hide();
-	  $('.thumb').fadeOut();
+	  $('.thumb').hide();
 
       $("#fade-in-tab").show();
 		return false;

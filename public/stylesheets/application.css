@@ -1,10 +1,11 @@
 body {/* background-color: rgb(84, 93, 110); color: #333;*/
 /*	background-image:url('/images/fade_bw1.jpeg');*/
-	background-image:url('/images/bgd.gif');	
+/*	background-image:url('/images/ist2_5160756-metal-abstract-background.jpg');	*/
+/*	background-image:url('/images/iStock_000005523415XSmall.jpg');	*/	
+	
 	
 /*	background-repeat:repeat-x;*/
-	background-color: grey
-;
+	background-color: grey;
     margin: 0;
     padding:0;
        font-family: 'Reenie Beanie', serif;
@@ -21,11 +22,13 @@ h1{
 		color:white;
 }
 
+
+
 #song-title{
 	text-align: center;
 	padding:30px;
  	font-size:50px;
-		font-color: white;
+	font-color: white;
 		
 
 }
@@ -43,9 +46,12 @@ h3{
 
 #tuner{
 	position :absolute;
-	left: 390px;
-	top:300px;
+	left: 350px;
+	top:250px;
 
+}
+#tuner object{
+	border: 80px solid black;
 }
 
 #chord-listings{
@@ -84,10 +90,10 @@ color:red;
 	width: 1024px;
 	background:#fff;
 /*		    border-top: 5px solid grey;*/
-	    border-left: 1px solid grey;
-    border-right: 1px solid grey;
-	    border-left: 3px solid black;
-    border-right: 3px solid black;
+/*	    border-left: 1px solid grey;
+    border-right: 1px solid grey;*/
+/*	    border-left: 5px solid grey;
+    border-right: 5px solid grey;*/
 }
 
 #title
