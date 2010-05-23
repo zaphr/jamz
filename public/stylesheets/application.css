@@ -1,279 +1,207 @@
-body {/* background-color: rgb(84, 93, 110); color: #333;*/
-/*	background-image:url('/images/fade_bw1.jpeg');*/
-/*	background-image:url('/images/ist2_5160756-metal-abstract-background.jpg');	*/
-/*	background-image:url('/images/iStock_000005523415XSmall.jpg');	*/
-	background-image:url('/images/guit.gif');
-		background-image:url('/images/bkz.png');	
-	background-attachment:fixed;
-	background-repeat:repeat-x;
-	background-color: #4B4B4B;
-    margin: 0;
-    padding:0;
-       font-family: 'Reenie Beanie', serif;
-        font-size: 24px;
-	 }
-	
-#tabs{
-     font-size:70%;   
+body {
+background-image: url('/images/bkz.png');
+background-attachment: fixed;
+background-repeat: repeat-x;
+background-color: #4B4B4B;
+margin: 0;
+padding: 0;
+font-family: 'Reenie Beanie', serif;
+font-size: 24px;
 }
 
-h1{
-	text-align: center;
-	  line-height: 100px;
-	
-		color:white;
+#header {
+background: #350608;
+padding: 5px;
+border-top: 1px solid grey;
+border-bottom: 1px solid grey;
+background-image: url('/images/photo_13263_20100303.jpg');
+background-repeat: repeat-x;
 }
 
-
-
-#song-title{
-	text-align: center;
-	padding:30px;
- 	font-size:50px;
-	font-color: white;
-		
-
+#header h1 {
+margin: 0;
+text-align: center;
+line-height: 100px;
+color: white;
 }
 
-h3{
-	text-align: center;
-	color:red;	
+#container {
+margin: 0 auto;
+width: 1024px;
+background: #fff;
+border-left: 1px solid grey;
+border-right: 1px solid grey;
 }
 
-#youtube_video{
-  position:absolute;
-/*left:450px;*/
-	
+#content {
+clear: left;
+padding: 20px;
+height: 1200px;
 }
 
-#tuner{
-	position :absolute;
-	left: 350px;
-	top:250px;
-
+#footer {
+background: #ccc;
+text-align: right;
+padding: 10px;
+height: 1%;
 }
 
-#chord-listings{
-  position:relative;
-top:5px;
-left:530px;
-color:red;
+/* Nav bar */
 
-  
- 
+#navigation {
+float: left;
+width: 1024px;
+background: #333;
 }
 
-
-#capo-desc{
-      font-size: 36px;
-      position:relative;
-top:0px;
-left:560px;
-color:red;
-	
+#navigation ul {
+margin: 0;
+padding: 0;
 }
 
-#capo-desc2{
-padding:15px;
-color:red;
-	
-}
-#tab-display{
-	position:absolute;
-	top:780px;
+#navigation ul li {
+list-style-type: none;
+display: inline;
 }
 
-#container
-{
-	margin: 0 auto;
-	width: 1024px;
-	background:#fff;
-/*		    border-top: 5px solid grey;*/
-/*	    border-left: 1px solid grey;
-    border-right: 1px solid grey;*/
-	    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+#navigation li a {
+display: block;
+float: left;
+padding: 5px 10px;
+color: #fff;
+text-decoration: none;
+border-right: 1px solid#fff;
 }
 
-#title
-{
-	text-align: center;
-
+#navigation li a:hover {
+background: #383;
 }
 
-#song-search{
-	display:none;
+/* Song Index */
+
+#song-list table {
+margin-bottom: 10px;
+width: 986px;
 }
 
-#song-search button{
-  font-size:88%; 
- 
-
+#song-list td {
+padding: 20px;
 }
 
-#SearchText
-{
-/*border: 1px solid black;*/
-background: #555555;
-background: #ccc;    
-/*color: #ffffff;*/
-font-size: 0.7em;
-color: grey;
-    height: 25px;
-width:600px;
-padding:8px;
-
+#song-list tr:hover {
+background: #bbbbbb;
 }
-
-#header
-{
-
-
-/*	background:#ccc;*/
-	background: #350608;
- /*background: #39414A url(http://static.jquery.com/files/rocker/images/bg-home-tile.jpg) repeat-x 50% 0px;*/
-   	/*background-image:url('/images/br1.png');*/
-	/*background-repeat:repeat-x;*/
-	padding: 5px;
-	    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-  /*  height: 50px;*/
-    /*display:none;*/
-	background-image:url('/images/photo_13263_20100303.jpg');
-	background-repeat:repeat-x;
-/*	background-repeat:no-repeat;*/
-}
-
-#header h1 { margin: 0; }
-
-#navigation
-{
-	float: left;
-	width: 1024px;
-	background:#333;
-
-}
-
-#navigation ul
-{
-	margin: 0;
-	padding: 0;
-}
-
-#navigation ul li
-{
-	list-style-type: none;
-	display: inline;
-}
-
-#view-tab-selector li
-{
-	list-style-type: none;
-	display: inline;
-}
-
-#navigation li a
-{
-	display: block;
-	float: left;
-	padding: 5px 10px;
-	color:#fff;
-	text-decoration: none;
-	border-right: 1px solid#fff;
-}
-
-#navigation li a:hover { background:#383;}
-
-#content
-{
-	clear: left;
-	padding: 20px;
-	height: 1200px;
-
-}
-
-#content h2
-{
-	color:#000;
-	font-size: 160%;
-	margin: 0 0 .5em;
-}
-
-#footer
-{
-	background:#ccc;
-	text-align: right;
-	padding: 10px;
-	height: 1%;
-}
-
-#song-list table
-{
-	margin-bottom: 10px;
-    width: 986px;
-}
-
-#song-list td
-{
-	padding: 20px;	
-}
-
-#song-list tr:hover { background:#bbbbbb; }
 
 #song-list .list-line-even {
-  background:   #eeeeee;
-
+background: #eeeeee;
 }
 
 #song-list .list-line-odd {
-  background:   #dddddd;
+background: #dddddd;
 }
 
+/* Song listing */
 
+#song-title {
+text-align: center;
+margin: 0 0 .5em;
+padding: 30px;
+font-size: 160%;
+font-color: white;
+}
 
-.tab-names li{
-	list-style-type: none;
-	display: inline;
-	border: 3px solid black;
-	padding : 12px;
-	background-color:black;
-   font-size: 36px;
-	color:white;
+h3 {
+text-align: center;
+color: red;
+}
+
+#youtube_video {
+position: absolute;
+}
+
+#chord-listings {
+position: relative;
+
+top: 5px;
+left: 530px;
+color: red;
+}
+
+#capo-desc {
+font-size: 36px;
+position: relative;
+top: 0px;
+left: 560px;
+color: red;
+}
+
+#capo-desc2 {
+padding: 15px;
+color: red;
+}
+
+#tab-display {
+position: absolute;
+top: 780px;
+}
+
+#view-tab-selector li {
+list-style-type: none;
+display: inline;
 }
 
 .tab-names {
-/*	border: 2px solid black;*/
-		padding : 12px;	
-	
+padding : 12px;
+}
+
+.tab-names li {
+list-style-type: none;
+display: inline;
+border: 3px solid black;
+padding : 12px;
+background-color: black;
+font-size: 36px;
+color: white;
 }
 
 ul.thumb {
-	float: left;
-	list-style: none;
-	margin: 0; padding: 10px;
-	width: 1000px;
-
+float: left;
+list-style: none;
+margin: 0;
+padding: 10px;
+width: 1000px;
 }
 ul.thumb li {
-	margin: 0; padding: 5px;
-	float: left;
-	position: relative;  /* Set the absolute positioning base coordinate */
+margin: 0;
+padding: 5px;
+float: left;
+position: relative;  /* Set the absolute positioning base coordinate */
 	width: 110px;
-	height: 110px;
-	
+height: 110px;
 }
 ul.thumb li img {
-	width: 100px; height: 100px; /* Set the small thumbnail size */
-		width: 100px; height: 100px; /* Set the small thumbnail size */
+width: 100px;
+height: 100px; /* Set the small thumbnail size */
+		width: 100px;
+height: 100px; /* Set the small thumbnail size */
 	-ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
 	border: 5px solid #ddd;
-	padding: 5px;
-	background: #f0f0f0;
-	position: absolute;
-	left: 0; top: 0;
+padding: 5px;
+background: #f0f0f0;
+position: absolute;
+left: 0;
+top: 0;
 }
 ul.thumb li img.hover {
 	/*background:url(thumb_bg.png) no-repeat center center;  *//* Image used as background on hover effect*/
 	border: none; /* Get rid of border on hover */
 		background:#fff;
+}
+
+/* Tuner */
+
+#tuner {
+position :absolute;
+left: 350px;
+top: 250px;
 }

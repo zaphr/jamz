@@ -40,14 +40,6 @@ $("ul.thumb li").hover(function() {
 
 });
 
-
-    $(function(){
-	  $("#song-search button").click(function(){
-		alert("Search coming very soon..");
-		return false;
-	});
-});
-
     $(function(){
 	  $("#fade-out-tab").click(function(){
       $("#fade-out-tab").hide();
@@ -57,8 +49,6 @@ $("ul.thumb li").hover(function() {
 		return false;
 	});
 });
-
-
 
     $(function(){
 	  $("#fade-in-tab").click(function(){
@@ -76,43 +66,11 @@ $(function(){
 });
 
 $(function(){
-    $("button").button();
-    populateElement('#SearchText', 'Find a song to jam to..');
-});
-
-//$(function(){
-//    $("#tabs").tabs();
-//});
-
-
-$(function(){
-    $("#tabs").tabs();
-});
-
-$(function(){
 	$("tbody tr").click(function(e){
       window.location.href = $(this).find('a').attr('href')
     });
 });
 
- function populateElement(selector, defvalue) {
-    $(selector).each(function() {
-        if($.trim(this.value) == "") {
-            this.value = defvalue;
-        }
-    });
 
-    $(selector).focus(function() {
-        if(this.value == defvalue) {
-            this.value = "";
-        }
-    });
-
-    $(selector).blur(function() {
-        if($.trim(this.value) == "") {
-            this.value = defvalue;
-        }
-    });
- }
 
 

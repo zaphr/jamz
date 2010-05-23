@@ -1,42 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-<head>
-  <title>Jam Bot</title>
-  <!--<%= stylesheet_link_tag 'jam', :media => 'all' %>-->
-   <%= stylesheet_link_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/ui-darkness/jquery-ui.css", "application" %>
-  <%= stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Reenie+Beanie"%>
-
-  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
-  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" %>
-
-    <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tag %>
-
-</head>
-<body>
-
-	<div id="container">
-
-		<div id="header">
-		<h1>jam bot</h1>
+	<head>
+		<title>
+			Jam Bot
+		</title>
+		  <%= stylesheet_link_tag "application" %>
+		  <%= stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Reenie+Beanie"%>
+		  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" %>
+		  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js" %>
+		  <%= javascript_include_tag 'application' %><%= csrf_meta_tag %>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<h1>
+					jam bot
+				</h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li>
+						<%= link_to 'All Songs', homepage_path %>
+					</li>
+					<li>
+						<%= link_to 'Tuner', tuner_path %>
+					</li>
+					<li>
+						<a href="#">Chords</a>
+					</li>
+					<li>
+						<a href="#">About</a>
+					</li>
+				</ul>
+			</div>
+			<div id="content">
+				<%= yield %>
+			</div>
+			<div id="footer"></div>
 		</div>
-		<div id="navigation">
-			<ul>
-				<li><%= link_to 'All Songs', homepage_path %></li>
-				<li><%= link_to 'Tuner', tuner_path %></li>
-				<li><a href="#">Chords</a></li>
-				<li><a href="#">About</a></li>
-			</ul>
-	</div>
-		<div id="content">
-
-        <%= yield %>
-
-		</div>
-		<div id="footer">
-
-		</div>
-	</div>
-
-</body>
+	</body>
 </html>

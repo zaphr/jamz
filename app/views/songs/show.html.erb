@@ -1,45 +1,24 @@
-
-
 <h2 id='song-title'> <%= @song.name %>   -   <%= @song.artist %></h2>
+  <div id='capo-desc'><em>Capo position:</em>
+  <%= generate_capo_postion_text(@song.tab.capo_position) %>
+  </div> 
 
-<div id='capo-desc'><em>Capo position:</em>
+  <div id="youtube_video">
+  <object width="480" height="385"><param name="movie" value="<%= youtube_url(@song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
+  </div>
+  <div id="chord-listings">                                  
+    <% @tab_names = @tab_lines %>
+    <%= render(:partial => 'tab_name', :collection => @tab_names) %>
+  </div>
 
-<%= generate_capo_postion_text(@song.tab.capo_position) %>
+  <div id="tab-display">
+    <div id="view-links">
+ 	  <a href="#" id="fade-in-tab">Show Guitar Tablature</a>
 
+      <div id="fade-out-tab">
+	    <a href="#" >Hide Guitar Tablature</a>	
+	    <span id='capo-desc2'><em>Capo position:</em><%= generate_capo_postion_text(@song.tab.capo_position) %></span>	    
+	  </div>
+    </div>
+  <%= render(:partial => 'tab_line', :collection => @tab_lines) %>
 </div>
-
-<object id="youtube_video" width="480" height="385"><param name="movie" value="<%= youtube_url(@song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
-
-
-</p>
-
-
-<div id="chord-listings">                                  
-<% @tab_names = @tab_lines %>
-<%= render(:partial => 'tab_name', :collection => @tab_names) %>
-</div>
-
-<div id="tab-display">
-
-<div id="view-links">
-
- 	<a href="#" id="fade-in-tab">Show Guitar Tablature</a>
-
-<div id="fade-out-tab">
-	 <a href="#" >Hide Guitar Tablature</a>	
-	<div id='capo-desc2'><em>Capo position:</em>
-
-	<%= generate_capo_postion_text(@song.tab.capo_position) %>
-
-	</div>
-	</div>
-</div>
-<%= render(:partial => 'tab_line', :collection => @tab_lines) %>
-</div>
-
-
-
-
-
-
-
