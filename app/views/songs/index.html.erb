@@ -4,7 +4,7 @@
     <tr class="<%= cycle('list-line-odd', 'list-line-even') %> list-line">
       <td><%= song.name %></td>
       <td><%= song.artist %></td>
-      <td><%= song.tab.capo_position %></td>
+      <td>Capo: <%= song.tab.capo_position %></td>
       <td><%= link_to 'Show', song %></td>
       <td><object width="100" height="50"><param name="movie" value="<%= youtube_url(song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="200" height="150"></object></td>
     </tr>
