@@ -201,7 +201,7 @@ ul.thumb li img.hover {
 /* Tuner */
 
 #tuner {
-position :absolute;
-left: 350px;
-top: 250px;
+position :relative;
+left: 170px;
+top: 100px;
 }
