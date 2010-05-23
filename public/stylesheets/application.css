@@ -1,16 +1,18 @@
 body {/* background-color: rgb(84, 93, 110); color: #333;*/
 /*	background-image:url('/images/fade_bw1.jpeg');*/
 /*	background-image:url('/images/ist2_5160756-metal-abstract-background.jpg');	*/
-/*	background-image:url('/images/iStock_000005523415XSmall.jpg');	*/	
-	
-	
-/*	background-repeat:repeat-x;*/
-	background-color: grey;
+/*	background-image:url('/images/iStock_000005523415XSmall.jpg');	*/
+	background-image:url('/images/guit.gif');
+		background-image:url('/images/bkz.png');	
+	background-attachment:fixed;
+	background-repeat:repeat-x;
+	background-color: #4B4B4B;
     margin: 0;
     padding:0;
        font-family: 'Reenie Beanie', serif;
         font-size: 24px;
 	 }
+	
 #tabs{
      font-size:70%;   
 }
@@ -49,9 +51,6 @@ h3{
 	left: 350px;
 	top:250px;
 
-}
-#tuner object{
-	border: 80px solid black;
 }
 
 #chord-listings{
@@ -92,8 +91,8 @@ color:red;
 /*		    border-top: 5px solid grey;*/
 /*	    border-left: 1px solid grey;
     border-right: 1px solid grey;*/
-/*	    border-left: 5px solid grey;
-    border-right: 5px solid grey;*/
+	    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 
 #title
