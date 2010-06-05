@@ -4,7 +4,9 @@
   </div> 
 
   <div id="youtube_video">
-  <object width="480" height="385"><param name="movie" value="<%= youtube_url(@song.youtube_id) %>"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="<%= youtube_url(@song.youtube_id) %>" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></object>
+		<object type="application/x-shockwave-flash" data="<%= youtube_url(@song.youtube_id) %>" width="480" height="385">
+		    <param name="movie" value="<%= youtube_url(@song.youtube_id) %>" />
+		</object>		
   </div>
   <div id="chord-listings">                                  
     <% @tab_names = @tab_lines %>
