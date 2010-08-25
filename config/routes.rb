@@ -1,7 +1,7 @@
 Jam::Application.routes.draw do |map|
   get "tuner/index"
   
-  match 'tuner' => 'tuner#index', :as => :tuner
+ match 'tuner' => 'tuner#index', :as => :tuner
 
   resources :songs
 
