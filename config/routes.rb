@@ -1,4 +1,10 @@
 Jam::Application.routes.draw do |map|
+  get "pages/about"
+
+  get "pages/tuner"
+
+  get "pages/contact"
+
   get "tuner/index"
   
  match 'tuner' => 'tuner#index', :as => :tuner
