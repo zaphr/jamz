@@ -37,6 +37,13 @@ module Jam
     #   g.test_framework  :test_unit, :fixture => true
     # end
 
+    if Rails.env.test?
+      initializer :after => :initialize_dependency_mechanism do
+        ActiveSupport::Dependencies.mechanism = :load
+      end
+    end
+
+
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 

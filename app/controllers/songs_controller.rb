@@ -12,7 +12,7 @@ class SongsController < ApplicationController
   end
 
   # GET /songs/1
-  # GET /songs/1.xml
+  ## GET /songs/1.xml
   def show
     @song = Song.find(params[:id])
     @tab_lines = collect_chords(@song)
@@ -21,6 +21,7 @@ class SongsController < ApplicationController
       format.xml  { render :xml => @song }
     end
   end
-  ##foo
+
+
 
 end
