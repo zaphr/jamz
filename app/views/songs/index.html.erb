@@ -1,18 +1,6 @@
-<%= will_paginate %>
-<div id="song-list">
-  <table>
-    <% @songs.each do |song| %> 
-    <tr class="<%= cycle('list-line-odd', 'list-line-even') %> list-line">
-      <td><%= song.name %></td>
-      <td><%= song.artist %></td>
-      <td>Capo: <%= song.tab.capo_position %></td>
-      <td><%= link_to 'Show', song %></td>	
-	  <td><object type="application/x-shockwave-flash" data="<%= youtube_url(song.youtube_id) %>" width="200" height="150">
-		    <param name="movie" value="<%= youtube_url(song.youtube_id) %>" /></object></td>	
-    </tr>
-    <% end %>
-  </table>
+<div id ="loaded_songs">
+  <%= render 'songs' %>  
 </div>
-<%= will_paginate %>
+
 
 

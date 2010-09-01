@@ -66,7 +66,7 @@ $(function(){
 });
 
 $(function(){
-	$("tbody tr").click(function(e){
+	$("tbody tr").live("click", function(){
       window.location.href = $(this).find('a').attr('href')
     });
 });
