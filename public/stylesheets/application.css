@@ -1,207 +1,218 @@
 body {
-background-image: url('/images/bk1.jpg');
-background-attachment: fixed;
-background-repeat: repeat-x;
-background-color: black;
-margin: 0;
-padding: 0;
-font-family: 'Reenie Beanie', serif;
-font-size: 24px;
+    background-image: url('/images/bk1.jpg');
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Reenie Beanie', serif;
+    /*font-family: Helvetica, Arial, Verdana, sans-serif;*/
+    font-size: 24px;
 }
 
 #header {
-background: #350608;
-padding: 5px;
-border-top: 1px solid grey;
-border-bottom: 1px solid grey;
-background-image: url('/images/photo_13263_20100303.jpg');
-background-repeat: repeat-x;
+    background: #350608;
+    padding: 5px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    background-image: url('/images/photo_13263_20100303.jpg');
+    background-repeat: repeat-x;
 }
 
 #header h1 {
-margin: 0;
-text-align: center;
-line-height: 100px;
-color: white;
+    margin: 0;
+    text-align: center;
+    line-height: 100px;
+    color: white;
 }
 
 #container {
-margin: 0 auto;
-width: 1024px;
-background: #fff;
-border-left: 1px solid grey;
-border-right: 1px solid grey;
+    margin: 0 auto;
+    width: 1024px;
+    background: #fff;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
 }
 
 #content {
-clear: left;
-padding: 20px;
-height: 1200px;
+    clear: left;
+    padding: 20px;
+    height: 1200px;
 }
 
 #footer {
-background: #ccc;
-text-align: right;
-padding: 10px;
-height: 1%;
+    background: #ccc;
+    text-align: right;
+    padding: 10px;
+    height: 1%;
 }
 
 /* Nav bar */
 
 #navigation {
-float: left;
-width: 1024px;
-background: #333;
+    float: left;
+    width: 1024px;
+    background: #333;
 }
 
 #navigation ul {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 #navigation ul li {
-list-style-type: none;
-display: inline;
+    list-style-type: none;
+    display: inline;
 }
 
 #navigation li a {
-display: block;
-float: left;
-padding: 5px 10px;
-color: #fff;
-text-decoration: none;
-border-right: 1px solid#fff;
+    display: block;
+    float: left;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: none;
+    border-right: 1px solid#fff;
 }
 
 #navigation li a:hover {
-background: #383;
+    background: #383;
+}
+
+#user_info {
+    float :right;
+    padding: 5px 30px;
+    color: #fff;
+}
+
+#user_info a {
+    color: #fff;    
 }
 
 /* Song Index */
 
 #song-list table {
-margin-bottom: 10px;
-width: 986px;
+    margin-bottom: 10px;
+    width: 986px;
 }
 
 #song-list td {
-padding: 20px;
+    padding: 20px;
 }
 
 #song-list tr:hover {
-background: #bbbbbb;
+    background: #bbbbbb;
 }
 
 #song-list .list-line-even {
-background: #eeeeee;
+    background: #eeeeee;
 }
 
 #song-list .list-line-odd {
-background: #dddddd;
+    background: #dddddd;
 }
 
 /* Song listing */
 
 #song-title {
-text-align: center;
-margin: 0 0 .5em;
-padding: 30px;
-font-size: 160%;
-font-color: white;
+    text-align: center;
+    margin: 0 0 .5em;
+    padding: 30px;
+    font-size: 160%;
+    font-color: white;
 }
 
 h3 {
-text-align: center;
-color: red;
+    text-align: center;
+    color: red;
 }
 
 #youtube_video {
-position: absolute;
+    position: absolute;
 }
 
 #chord-listings {
-position: relative;
+    position: relative;
 
-top: 5px;
-left: 530px;
-color: red;
+    top: 5px;
+    left: 530px;
+    color: red;
 }
 
 #capo-desc {
-font-size: 36px;
-position: relative;
-top: 0px;
-left: 560px;
-color: red;
+    font-size: 36px;
+    position: relative;
+    top: 0px;
+    left: 560px;
+    color: red;
 }
 
 #capo-desc2 {
-padding: 15px;
-color: red;
+    padding: 15px;
+    color: red;
 }
 
 #tab-display {
-position: absolute;
-top: 780px;
+    position: absolute;
+    top: 780px;
 }
 
 #view-tab-selector li {
-list-style-type: none;
-display: inline;
+    list-style-type: none;
+    display: inline;
 }
 
 .tab-names {
-padding : 12px;
+    padding : 12px;
 }
 
 .tab-names li {
-list-style-type: none;
-display: inline;
-border: 3px solid black;
-padding : 12px;
-background-color: black;
-font-size: 36px;
-color: white;
+    list-style-type: none;
+    display: inline;
+    border: 3px solid black;
+    padding : 12px;
+    background-color: black;
+    font-size: 36px;
+    color: white;
 }
 
 ul.thumb {
-float: left;
-list-style: none;
-margin: 0;
-padding: 10px;
-width: 1000px;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    width: 1000px;
 }
 ul.thumb li {
-margin: 0;
-padding: 5px;
-float: left;
-position: relative;  /* Set the absolute positioning base coordinate */
-	width: 110px;
-height: 110px;
+    margin: 0;
+    padding: 5px;
+    float: left;
+    position: relative;  /* Set the absolute positioning base coordinate */
+    width: 110px;
+    height: 110px;
 }
 ul.thumb li img {
-width: 100px;
-height: 100px; /* Set the small thumbnail size */
-		width: 100px;
-height: 100px; /* Set the small thumbnail size */
-	-ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
-	border: 5px solid #ddd;
-padding: 5px;
-background: #f0f0f0;
-position: absolute;
-left: 0;
-top: 0;
+    width: 100px;
+    height: 100px; /* Set the small thumbnail size */
+    width: 100px;
+    height: 100px; /* Set the small thumbnail size */
+    -ms-interpolation-mode: bicubic; /* IE Fix for Bicubic Scaling */
+    border: 5px solid #ddd;
+    padding: 5px;
+    background: #f0f0f0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 ul.thumb li img.hover {
-	/*background:url(thumb_bg.png) no-repeat center center;  *//* Image used as background on hover effect*/
-	border: none; /* Get rid of border on hover */
-		background:#fff;
+/*background:url(thumb_bg.png) no-repeat center center;  *//* Image used as background on hover effect*/
+    border: none; /* Get rid of border on hover */
+    background:#fff;
 }
 
 /* Tuner */
 
 #tuner {
-position :relative;
-left: 170px;
-top: 100px;
+    position :relative;
+    left: 170px;
+    top: 100px;
 }

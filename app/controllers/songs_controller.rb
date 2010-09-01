@@ -3,7 +3,7 @@ class SongsController < ApplicationController
   # GET /songs
   # GET /songs.xml
   def index
-    @songs = Song.all
+    @songs = Song.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -21,7 +21,5 @@ class SongsController < ApplicationController
       format.xml  { render :xml => @song }
     end
   end
-
-
 
 end

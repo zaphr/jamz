@@ -1,17 +1,20 @@
 Jam::Application.routes.draw do |map|
-  get "pages/about"
+  devise_for :users
 
-  get "pages/tuner"
+  get "pages/about", :as => 'about'
 
-  get "pages/contact"
+  get "pages/tuner", :as => 'tuner'
 
-  get "tuner/index"
+  get "pages/contact", :as => 'contact'
+
+  #get "tuner/index", :as => 'homepage'
   
   match 'tuner' => 'pages#tuner', :as => :tuner
 
   resources :songs
 
-  root :to => "songs#index", :as => 'homepage'
+  root :to => "songs#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

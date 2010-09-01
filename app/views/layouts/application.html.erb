@@ -13,6 +13,9 @@
 		  <%= javascript_include_tag 'application' %><%= csrf_meta_tag %>
 	</head>
 	<body>
+    <!--<p class="notice"><%= notice %></p>-->
+          <!--<p class="alert"><%= alert %></p>-->
+    
 		<div id="container">
 			<div id="header">
 				<h1>
@@ -21,13 +24,25 @@
 			</div>
 			<div id="navigation">
 				<ul>
-					<li><%= link_to 'All Songs', homepage_path %></li>					
+					<li><%= link_to 'All Songs', songs_path %></li>					
 					<li><%= link_to 'Tuner', tuner_path %></li>										
 					<li><a href="#">Chords</a></li>			
-					<li><a href="#">About</a></li>											
+				<li><%= link_to 'About', about_path %></li>
+                  				<li><%= link_to 'Contact', contact_path %></li>	
 				</ul>
+              <div id ="user_info">
+                <% if user_signed_in?  %>
+                  <%= current_user.email %>. Not you?
+                    <%= link_to "Sign out", destroy_user_session_path %>
+                    <% else  %>
+                    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+                <% end %>
+              </div>
 			</div>
 			<div id="content">
+              <% flash.each do |name, msg|  %>
+                <%= content_tag :div, msg, :id => "flash_#{name}" %>
+              <% end  %>
 				<%= yield %>
 			</div>
 			<div id="footer"></div>
