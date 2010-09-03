@@ -1,0 +1,24 @@
+%h2#song-title= "#{@song.name}   -   #{@song.artist}"
+#capo-desc
+  %em Capo position:
+  = generate_capo_position_text(@song.tab.capo_position)
+#youtube_video
+  %object{:type => "application/x-shockwave-flash",
+            :data => "#{youtube_url(@song.youtube_id)}",
+            :width => "480", :height => "385"}
+    %param{:name => "movie",
+             :value => "#{youtube_url(@song.youtube_id)}"}
+#chord-listings
+  - @tab_names = @tab_lines
+  = render(:partial => 'tab_name', :collection => @tab_names)
+#tab-display
+  #view-links
+    %a#fade-in-tab{:href => "#"} Show Guitar Tablature
+    #fade-out-tab
+      %a{:href => "#"} Hide Guitar Tablature
+      %span#capo-desc2
+        %em Capo position:
+        = generate_capo_position_text(@song.tab.capo_position)
+  = render(:partial => 'tab_line', :collection => @tab_lines)
+
+

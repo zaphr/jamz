@@ -11,7 +11,7 @@ module SongsHelper
     tab_lines
   end
   
-  def generate_capo_postion_text(capo_position)
+  def generate_capo_position_text(capo_position)
     position = capo_position.to_i
     if position > 0
       "#{position.ordinalize} fret"      
