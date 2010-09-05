@@ -1,0 +1,38 @@
+!!!
+%html
+  %head
+    %title
+      Chord Shift
+    = stylesheet_link_tag "application"
+    = stylesheet_link_tag  "http://fonts.googleapis.com/css?family=Reenie+Beanie"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"
+    = javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/jquery-ui.min.js"
+    = javascript_include_tag 'pagination'
+    = javascript_include_tag 'application'
+    = csrf_meta_tag
+  %body
+    #container
+      #header
+        %h1
+          Chord Shift
+      #navigation
+        %ul
+          %li= link_to 'All Songs', songs_path
+          %li= link_to 'Tuner', tuner_path
+          %li
+            %a{:href => "#"} Chords
+          %li= link_to 'About', about_path
+          %li= link_to 'Contact', contact_path
+        #user_info
+          - if user_signed_in?
+            = current_user.username
+            = link_to "Sign out", destroy_user_session_path
+          - else
+            = link_to "Sign up", new_user_registration_path
+            or #{link_to "sign in", new_user_session_path}
+      #content
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}"
+        = yield
+      #footer
+      = debug(params) if Rails.env.development?
