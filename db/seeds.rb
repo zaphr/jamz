@@ -41,4 +41,20 @@ Song.create(:name => 'Wendy', :artist => "Concrete Blonde", :youtube_id => "kO6q
 tab = create_tab(["Em G D"], '3')
 Song.create(:name => 'Rainin In Paradize', :artist => "Manu Chao", :youtube_id => "D977uOHVxYA", :tab => tab)
 
-  
+##
+
+
+tab = create_tab(["G A", "G A"])
+Song.create(:name => 'Jane Says', :artist => "Jane's Addiction", :youtube_id => "xh-5FI21s6M", :tab => tab)
+
+tab = create_tab(["G Em C D"])
+Song.create(:name => 'Joey', :artist => "Concrete Blonde", :youtube_id => "VM4-V7HvbPk", :tab => tab)
+
+tab = create_tab(["Am G F G"], '3')
+Song.create(:name => 'All Along The Watchtower', :artist => "Jimi Hendrix", :youtube_id => "bng3agUOYiI", :tab => tab)
+
+tab = create_tab(["C G Am F"], '3')
+Song.create(:name => 'Wendy', :artist => "Concrete Blonde", :youtube_id => "kO6qrtSTkew", :tab => tab)
+
+tab = create_tab(["Em G D"], '3')
+Song.create(:name => 'Rainin In Paradize', :artist => "Manu Chao", :youtube_id => "D977uOHVxYA", :tab => tab)

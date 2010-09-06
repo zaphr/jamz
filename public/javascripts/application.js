@@ -71,6 +71,7 @@ $(function(){
     });
 });
 
-
-
-
+$(document).ready(function(){
+    $(".round-corner").corner("round right 5px").corner("round left 5px");
+    $('#content').corner("round 20px");
+});
