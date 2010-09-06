@@ -105,6 +105,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-expectations (v2.0.0.beta.20, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/rspec-expectations-2.0.0.beta.20)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] diff-lcs (v1.1.2, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/diff-lcs-1.1.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] rspec-mocks (v2.0.0.beta.20, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/rspec-mocks-2.0.0.beta.20)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby_parser (v2.0.5, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/ruby_parser-2.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.0.18, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/haml-3.0.18)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] hpricot (v0.8.2, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/hpricot-0.8.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sexp_processor (v3.0.5, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/sexp_processor-3.0.5)" level="application" />
   </component>
 </module>
 
