@@ -1,15 +1,16 @@
-= will_paginate
+#top_pagination
+  = will_paginate
 #song-list
-  %div
-    - @songs.each do |song|
-      .single_song
-        .vid
-          %object{:type => "application/x-shockwave-flash",
+  - @songs.each do |song|
+    .single_song
+      .vid
+        %object{:type => "application/x-shockwave-flash",
           :data => "#{youtube_url(song.youtube_id)}",
           :width => "200", :height => "150"}
-        .info_layout
-          %ul
-            %li= link_to song.name, song
-            %li= song.artist
-            %li= generate_capo_position_text(song.tab.capo_position)
-= will_paginate
+      .info
+        %ul
+          %li= link_to song.name, song
+          %li= song.artist
+          %li= generate_capo_position_text(song.tab.capo_position)
+#bottom_pagination
+  = will_paginate

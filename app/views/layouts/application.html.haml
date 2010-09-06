@@ -20,6 +20,10 @@
       #header
         %h1
           Chord Shift
+      #content
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}"
+        = yield
       #sidebar
         %ul
           %li= link_to 'All Songs', songs_path
@@ -35,9 +39,5 @@
           - else
             = link_to "Sign up", new_user_registration_path
             or #{link_to "sign in", new_user_session_path}
-      #content
-        - flash.each do |name, msg|
-          = content_tag :div, msg, :id => "flash_#{name}"
-        = yield
       #footer
       = debug(params) if Rails.env.development?
