@@ -115,6 +115,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] haml (v3.0.18, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/haml-3.0.18)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] hpricot (v0.8.2, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/hpricot-0.8.2)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] sexp_processor (v3.0.5, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/sexp_processor-3.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] compass (v0.10.5, /Users/zaphr/.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5)" level="application" />
   </component>
 </module>
 

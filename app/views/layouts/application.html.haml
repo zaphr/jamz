@@ -15,29 +15,30 @@
     = javascript_include_tag 'pagination'
     = javascript_include_tag 'application'
     = csrf_meta_tag
-  %body.two-col.bp
+  %body.two-col
     #container
       #header
         %h1
-          Chord Shift
-      #content
+          Get your funk on
+      #content.round
         - flash.each do |name, msg|
           = content_tag :div, msg, :id => "flash_#{name}"
         = yield
       #sidebar
-        %ul
-          %li= link_to 'All Songs', songs_path
-          %li= link_to 'Tuner', tuner_path
-          %li
-            %a{:href => "#"} Chords
-          %li= link_to 'About', about_path
-          %li= link_to 'Contact', contact_path
-        #user_info
-          - if user_signed_in?
-            = current_user.username
-            = link_to "Sign out", destroy_user_session_path
-          - else
-            = link_to "Sign up", new_user_registration_path
-            or #{link_to "sign in", new_user_session_path}
+        -##menu.round
+        -#  %ul
+        -#    %li= link_to 'All Songs', songs_path
+        -#    %li= link_to 'Tuner', tuner_path
+        -#    %li
+        -#      %a{:href => "#"} Chords
+        -#    %li= link_to 'About', about_path
+        -#    %li= link_to 'Contact', contact_path
+        -##user_info.round
+        -#  - if user_signed_in?
+        -#    = current_user.username
+        -#    = link_to "Sign out", destroy_user_session_path
+        -#  - else
+        -#    = link_to "Sign up", new_user_registration_path
+        -#    or #{link_to "sign in", new_user_session_path}
       #footer
-      = debug(params) if Rails.env.development?
+      -#= debug(params) if Rails.env.development?

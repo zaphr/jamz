@@ -20,67 +20,64 @@
 // when stylesheets are concatenated together.
 //+blueprint-scaffolding("body.bp")
 
-=boxy
-  padding: 1.5em
-  margin-bottom: 1.5em
-  background: white
 
-body.bp
+body
   +blueprint-typography(true)
   +blueprint-utilities
   +blueprint-debug
   +blueprint-interaction
   +fancy-type
+
   // Remove the scaffolding when you're ready to start doing visual design.
   // Or leave it in if you're happy with how blueprint looks out-of-the-box
 
-form.bp
+form
   +blueprint-form
 
 // Page layout can be done using mixins applied to your semantic classes and IDs:
 body.two-col
+  background-color: #F76503
   background-image: url('/images/i2.jpg')
+  background-image: url('/images/j3.jpg')
+  background-image: url('/images/j3.jpg')
+  background-image: url('/images/j4.jpg')
   background-repeat: no-repeat
   #container
     +container
-  #header, #footer
+  #footer
     +column($blueprint-grid-columns)
-  #sidebar
-    background: yellow
-    // One third of the grid columns, rounding down. With 24 cols, this is 8.
-    $sidebar-columns: floor($blueprint-grid-columns / 4)
-    +column($sidebar-columns)
+  #header
+    +column($blueprint-grid-columns/3, true)
+    background-color: #393A38
+    +append-bottom(40px)
+    +prepend(1)
+    h1
+      color: white
+      padding: 10px
+
   #content
     background: white
-    // Two thirds of the grid columns, rounding up.
-    // With 24 cols, this is 16.
-    $content-columns: ceil(3 * $blueprint-grid-columns / 4)
-    // true means it's the last column in the row
-    +column($content-columns, true)
+    +column($blueprint-grid-columns, true)
 
 #song-list
-  $blueprint-grid-margin: 10px
-  background: blue
   .single_song
-    background: grey
+    +column(12, true)
     .vid
-      +column(7)
-      +append(1)
+      +column(5)
       +prepend(1)
       +prepend-top(15px)
       +append-bottom(5px)
     .info
-      +append(1)
-      +column(8, true)
+      +column(6, true)
       +prepend-top(40px)
-
       background: white
 
 #top_pagination
-  +column(18, true)
-  +prepend(1)
-  +prepend-top(15px)
+  background: #393A38
+  color: white
+  +column(23, true)
   +append-bottom(5px)
+  padding: 20px
 
 #bottom_pagination
   +column(18, true)
