@@ -11,6 +11,8 @@ gem 'will_paginate', '>= 3.0.pre'
 gem 'haml'
 gem 'hpricot'
 gem 'ruby_parser'
+gem "compass", ">= 0.10.5"
+
 
 group :development do
   gem 'rspec-rails', '2.0.0.beta.18'
