@@ -595,7 +595,6 @@ body.two-col #content {
   float: left;
   margin-right: 0;
   width: 910px;
-  margin-bottom: 5px;
   padding: 20px;
 }
 /* line 139, ../../../../.rvm/gems/ruby-1.9.2-p0@rails3/gems/compass-0.10.5/frameworks/blueprint/stylesheets/blueprint/_grid.scss */
@@ -603,7 +602,7 @@ body.two-col #content {
   overflow-x: hidden;
 }
 
-/* line 82, ../../app/stylesheets/screen.sass */
+/* line 81, ../../app/stylesheets/screen.sass */
 #bottom_pagination {
   display: inline;
   float: left;
